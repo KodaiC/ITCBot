@@ -11,7 +11,7 @@ import settings
 
 intents = Intents.default()
 intents.members = True
-client = commands.Bot(command_prefix=("!", "！"))
+client = commands.Bot(command_prefix=("!", "！"), intents=intents)
 
 DATABASE_URL = settings.dbname
 
